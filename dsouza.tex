@@ -1,0 +1,36 @@
+\documentclass[12pt,conference,onecolumn]{IEEEtran}
+
+\usepackage[hidelinks]{hyperref}
+
+\title{No title given}
+\author{%
+\IEEEauthorblockN{Joel D'Souza}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:426jdsouza@frhsd.com}{426jdsouza@frhsd.com}}\and
+\IEEEauthorblockN{Adrit Sikdar}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:426asikda@frhsd.com}{426asikdar@frhsd.com}}
+}
+\date{June 16, 2026}
+
+\newcommand{\keywords}{machine learning, ML, piping system, contamination, design, sensor placement}
+
+\usepackage{hyperref}
+\makeatletter
+\AtBeginDocument{
+\hypersetup{%
+pdftitle={\@title},
+pdfauthor={Joel D'Souza and Adrit Sikdar},
+pdfkeywords={\keywords}}}
+\makeatother
+
+\begin{document}
+\maketitle 
+
+\begin{abstract}
+Municipal water pipe networks are extremely diverse and complex. The complexity of water distribution networks allows contaminants to spread quickly and makes detection within the pipes challenging. This project focuses on creating a machine learning (ML) based system to detect contamination within a pipe network using sensors. The core principle of the algorithm is to determine the optimal placement of each sensor to maximize detection rate, accuracy, and speed with the given constraint of $k$ total sensors in the system.
+
+The project features a simulation capable of generating a water pipe network or importing an existing one, with the ability to introduce contamination points that spread through the network based on flow dynamics. This simulation will be used to train the ML model based on its core principle for varying sizes of $k$, providing a tradeoff curve based on a cost versus protection relationship. The employment of this model provides engineers a tool to efficiently calculate optimal sensor placement in water pipe networks for their given budget, alongside providing an understanding of system performance given their specific constraints.
+\end{abstract}
+
+\begin{IEEEkeywords}
+\keywords
+\end{IEEEkeywords}
+
+\end{document}
