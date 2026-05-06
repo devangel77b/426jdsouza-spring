@@ -2,7 +2,7 @@
 
 \usepackage[hidelinks]{hyperref}
 
-\title{No title given}
+\title{Optimization of sensor placement for water network contamination detection}
 \author{%
 \IEEEauthorblockN{Joel D'Souza}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:426jdsouza@frhsd.com}{426jdsouza@frhsd.com}}\and
 \IEEEauthorblockN{Adrit Sikdar}\IEEEauthorblockA{Science \& Engineering\\Manalapan High School\\Englishtown, NJ\\\href{mailto:426asikda@frhsd.com}{426asikdar@frhsd.com}}
@@ -24,9 +24,7 @@ pdfkeywords={\keywords}}}
 \maketitle 
 
 \begin{abstract}
-Municipal water pipe networks are extremely diverse and complex. The complexity of water distribution networks allows contaminants to spread quickly and makes detection within the pipes challenging. This project focuses on creating a machine learning (ML) based system to detect contamination within a pipe network using sensors. The core principle of the algorithm is to determine the optimal placement of each sensor to maximize detection rate, accuracy, and speed with the given constraint of $k$ total sensors in the system.
-
-The project features a simulation capable of generating a water pipe network or importing an existing one, with the ability to introduce contamination points that spread through the network based on flow dynamics. This simulation will be used to train the ML model based on its core principle for varying sizes of $k$, providing a tradeoff curve based on a cost versus protection relationship. The employment of this model provides engineers a tool to efficiently calculate optimal sensor placement in water pipe networks for their given budget, alongside providing an understanding of system performance given their specific constraints.
+Municipal water distribution networks are complex systems in which contaminants can spread rapidly, making timely and effective detection a significant challenge. This project develops a simulation-based optimization framework to determine the most effective placement of a limited number of sensors within a water pipeline network. By modeling contamination events at random entry points and simulating their spread based on network flow dynamics, the system evaluates different sensor configurations using performance metrics such as detection rate and detection time. Multiple algorithmic approaches are explored to identify high-performing sensor placements under a fixed sensor budget ($k$). Additionally, the project examines the tradeoff between cost and protection by analyzing how system performance changes with varying numbers of sensors. This work aims to provide a practical tool for improving water system safety and resilience through data-driven decision-making.
 \end{abstract}
 
 \begin{IEEEkeywords}
